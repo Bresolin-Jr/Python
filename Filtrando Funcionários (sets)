@@ -1,0 +1,23 @@
+funcionario = input("Digite o nome do fucionário: ")
+
+dont_car = set()
+Dia = set()
+Noite = set()
+
+while funcionario != 'fim':
+    tem_carro = input("O funcionário possui um carro? ")
+    if tem_carro == 'Não':
+        dont_car.add(funcionario)
+    elif tem_carro == 'Sim':
+        turno = input("Turno que o funcionário trabalha: ")
+
+        if turno == 'Dia':
+            Dia.add(funcionario)
+        else:
+            Noite.add(funcionario)
+
+    funcionario = input("Digite o nome do fucionário: ")
+
+print(f"Lista 1 = {Noite}")
+print(f"Lista 2 = {Dia}")
+print(f"Lista 3 = {dont_car}")
