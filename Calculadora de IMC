@@ -1,0 +1,14 @@
+from modulo import masculino, feminino
+
+print("Calculadora de IMC:")
+altura = float(input("Qual a altura do participante? "))
+
+while altura != 0:
+    peso = float(input("Qual o peso do participante? "))
+    genero = input("Qual o gênero do participante?(M/F) ")
+
+    if genero == "M":
+        masculino(altura, peso)
+    elif genero == "F":
+        feminino(altura, peso)
+    altura = float(input("Qual a altura do participante? "))
