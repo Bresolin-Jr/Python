@@ -1,0 +1,30 @@
+def masculino(altura, peso):
+    imc = peso / (altura * altura)
+
+    if imc < 20:
+        print("Abaixo do normal.")
+    elif imc <= 24.9:
+        print("Normal")
+    elif imc <= 29.9:
+        print("Obesidade leve.")
+    elif imc <= 39.9:
+        print("Obesidade moderada")
+    elif imc >= 40:
+        print("Obesidade mórbida.")
+    return
+
+
+def feminino(altura, peso):
+    imc = peso / (altura * altura)
+
+    if imc < 19:
+        print("Abaixo do normal.")
+    elif imc <= 23.9:
+        print("Normal")
+    elif imc <= 28.9:
+        print("Obesidade leve.")
+    elif imc <= 38.9:
+        print("Obesidade moderada")
+    elif imc >= 39:
+        print("Obesidade mórbida.")
+    return
